@@ -159,7 +159,7 @@ RCT_EXPORT_METHOD(listenForAuth)
                                              props: @{
                                                       @"eventName": @"userTokenError",
                                                       @"authenticated": @((BOOL)false),
-                                                      @"errorMessage": [error localizedFailureReason]
+                                                      @"errorMessage": @"An error occurred; please try again."
                                                       }];
                                         } else {
                                             [self
