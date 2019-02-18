@@ -11,7 +11,11 @@
 
 #import "Firebase.h"
 #import "RCTEventEmitter.h"
+#if __has_include(<React/RCTBridgeModule.h>)
+#import <React/RCTBridgeModule.h>
+#else
 #import "RCTBridgeModule.h"
+#endif
 #import "RCTUtils.h"
 
 @interface FirestackCloudMessaging : RCTEventEmitter <RCTBridgeModule> {
